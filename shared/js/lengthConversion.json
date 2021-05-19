@@ -1,0 +1,35 @@
+[
+  {
+    "unit": "inch", "abbr": "in", "conv":  0.08333333 
+  },
+  {
+    "unit": "foot", "abbr": "ft", "conv":  1 
+  },
+  {
+    "unit": "yard", "abbr": "yd", "conv":  3 
+  },
+  {
+    "unit": "mile", "abbr": "mi", "conv":  5280 
+  },
+  {
+    "unit": "nautical mile", "abbr": "nmi", "conv":  6076.1 
+  },
+  {
+    "unit": "nanometer", "abbr": "nm", "conv":  0.000000003280839895 
+  },
+  {
+    "unit": "micrometer", "abbr": "um", "conv":  0.000003280839895 
+  },
+  {
+    "unit": "millimeter", "abbr": "mm", "conv":  0.003280839895 
+  },
+  {
+    "unit": "centimeter", "abbr": "cm", "conv":  0.03280839895 
+  },
+  {
+    "unit": "meter", "abbr": "m", "conv":  3.280839895 
+  },
+  {
+    "unit": "kilometer", "abbr": "km", "conv":  3280.839895 
+  }
+]

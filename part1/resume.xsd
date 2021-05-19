@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- element definitions -->
+<xs:element name="name" type="xs:string"/>
+<xs:element name="address" type="xs:string"/>
+<xs:element name="city" type="xs:string"/>
+<xs:element name="province" type="xs:string"/>
+<xs:element name="postal_code" type="xs:string"/>
+<xs:element name="phone" type="xs:string"/>
+<xs:element name="email" type="xs:string"/>
+<xs:element name="summary" type="xs:string"/>
+<xs:element name="school_name" type="xs:string"/>
+<xs:element name="degree" type="xs:string"/>
+<xs:element name="grad_date" type="xs:string"/>
+<xs:element name="honors" type="xs:string"/>
+<xs:element name="job_title" type="xs:string"/>
+<xs:element name="company" type="xs:string"/>              
+<xs:element name="start_date" type="xs:string"/>
+<xs:element name="end_date" type="xs:string"/>
+<xs:element name="description" type="xs:string"/>
+
+<xs:element name="resume">
+  <xs:complexType>
+    <xs:sequence>
+
+      <xs:element name="personal">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="name"/>
+            <xs:element ref="address"/>
+            <xs:element ref="city"/>
+            <xs:element ref="province"/>
+            <xs:element ref="postal_code"/>
+            <xs:element ref="phone"/>
+            <xs:element ref="email"/>
+            <xs:element ref="summary"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="education">
+        <xs:complexType>
+          <xs:sequence>
+          <xs:element name="school" maxOccurs="unbounded">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element ref="school_name"/>
+                <xs:element ref="city"/>
+                <xs:element ref="province"/>
+                <xs:element ref="degree"/>
+                <xs:element name="grad_date"/>
+                <xs:element ref="honors"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="experience">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="work" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="job_title"/>
+                  <xs:element name="company"/>
+                  <xs:element name="start_date"/>
+                  <xs:element name="end_date"/>
+                  <xs:element name="description"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

@@ -1,0 +1,29 @@
+[
+  {
+    "unit": "square inch", "abbr": "sqin", "conv":  0.006944 
+  },
+  {
+    "unit": "square foot", "abbr": "sqft", "conv":  1 
+  },
+  {
+    "unit": "square yard", "abbr": "sqyd", "conv":  9 
+  },
+  {
+    "unit": "square mile", "abbr": "sqmi", "conv":  27878400 
+  },
+  {
+    "unit": "hectare", "abbr": "hectare", "conv":  107639 
+  },
+  {
+    "unit": "acre", "abbr": "acre", "conv":  43560 
+  },
+  {
+    "unit": "square centimeter", "abbr": "sqcm", "conv":  0.001076391 
+  },
+  {
+    "unit": "square meter", "abbr": "sqm", "conv":  10.763991042 
+  },
+  {
+    "unit": "square kilometer", "abbr": "sqkm", "conv":  10763910.42 
+  }
+]

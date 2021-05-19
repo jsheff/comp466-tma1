@@ -1,0 +1,31 @@
+<div id="mortgageDiv">
+  <div>
+    <h1>Mortgage Calculator</h1>
+  </div>
+  <div id="mortgageApp">
+    <div>Home Price: </div>
+    <div><input type="number" name="homePrice" id="homePrice" placeholder="Enter Home Price"></div>
+    <div id="priceError" class="error"></div>
+    <div>Downpayment: </div>
+    <div><input type="number" name="downpayment" id="downpayment" placeholder="Enter Downpayment"></div>
+    <div id="dpError" class="error"></div>
+    <div>Number of years to repay: </div>
+    <div><input type="number" name="amortization" id="amortization" placeholder="Enter years to pay"></div>
+    <div id="amortizationError" class="error"></div>
+    <div>Payment Frequency: </div>
+    <div>
+      <select name="frequency" id="frequency">
+        <option value="12" name="Monthly">Monthly</option>
+        <option value="24" name="Semi-Monthly">Semi-Monthly</option>
+        <option value="52" name="Weekly">Weekly</option>
+        <option value="104" name="Bi-Weekly">Bi-Weekly</option>
+      </select>
+    </div>
+    <div></div>
+    <div>Annual Interest Rate: </div>
+    <div><input type="number" name="annualRate" id="annualRate" placeholder="Enter annual rate"></div>
+    <div id="rateError" class="error"></div>
+    <div><button id="calculatePayment">Calculate Payment</button></div>
+    <div id="payment"></div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<diid="retirementDiv">
+  <div>
+    <h1>Retirement Calculator</h1>
+  </div>
+  <div id="retirementApp">
+    <div>Current Savings: </div>
+    <div><input type="number" name="savings" id="savings" step="1000"placeholder="Enter savings"></div>
+    <div id="savingsError" class="error"></div>
+    <div>Current Yearly Spending: </div>
+    <div><input type="number" name="spending" id="spending" step="1000" placeholder="Enter spending"></div>
+    <div id="spendingError" class="error"></div>
+    <div>Annual Rate of Return: </div>
+    <div><input type="number" name="returnRate" id="returnRate" placeholder="Enter investment return" value="6"></div>
+    <div id="returnError" class="error"></div>
+    <div>Withdrawl Rate: </div>
+    <div><input type="number" name="withdrawlRate" id="withdrawlRate" placeholder="Enter withdrawl rate" value="4"></div>
+    <div id="withdrawlError" class="error"></div>
+    <div>Current Age: </div>
+    <div><input type="number" name="currentAge" id="currentAge" placeholder="Enter age" min="0"></div>
+    <div id="ageError" class="error"></div>
+    <div>Life Expectency: </div>
+    <div><input type="number" name="lifeExpectency" id="lifeExpectency" value="90"></div>
+    <div id="expectencyError" class="error"></div>
+    <div><button id="calculateRetirement">Can I Retire?</button></div>
+  </div>
+  <div id="futureSpending"></div>
+</div>

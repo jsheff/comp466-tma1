@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="resume.xsl"?>
+<?xml-stylesheet href="style.css"?>
+<resume
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="resume.xsd">
+
+<!-- General Information -->
+
+<personal>
+  <name>Joyce Sheffield</name>
+  <address>3530 Hidden Oaks Crescent</address>
+  <city>Cobble Hill</city>
+  <province>BC</province>
+  <postal_code>V0R 1L4</postal_code>
+  <phone>250-588-2225</phone>
+  <email>joycesheffield@outlook.com</email>
+  <summary>Avionics technician with 8 years of experience. Deployed worldwide with the Canadian Air
+  Force and Navy. Working closely with the Flight Safety team and the maintenance organization to 
+  maintain and improve the safety of flying operations. Entrusted with expenditure management 
+  Suthority for the maintenance organization.</summary>
+</personal>
+
+<!-- Educational Background -->
+  
+<education>
+
+  <school>
+    <school_name>Marine Institute</school_name>
+    <city>St. John's</city>
+    <province>NL</province>
+    <degree>Electromechanical Engineering Technician Diploma</degree>
+    <grad_date>2004</grad_date>
+    <honors>Award of Excellence</honors>
+  </school>
+
+  <school>
+    <school_name>Fanshawe College</school_name>
+    <city>London</city>
+    <province>ON</province>
+    <degree>Business - Accounting Diploma</degree>
+    <grad_date>2000</grad_date>
+    <honors>President's Honor Roll</honors>
+  </school>
+
+</education>
+
+<!-- Work Experience -->
+
+<experience>
+
+  <work>
+    <job_title>Field Service Representative</job_title>
+    <company>General Dynamics Mission Systems Canada</company>
+    <start_date>2019</start_date>
+    <end_date>2021</end_date>
+    <description>Provide technical support to technicians to diagnose and rectify aircraft mission 
+      system faults. Investigate technical problems. Set up and maintain mission planning hardware 
+      and software on naval vessels and Squadron Operations. Advise DND maintenance managers about 
+      ongoing technical issues in maintenance planning meetings. Perform preventative maintenance 
+      on aircraft components and test equipment.</description>
+  </work>
+
+  <work>
+    <job_title>Avionics Technician</job_title>
+    <company>Canadian Forces</company>
+    <start_date>2010</start_date>
+    <end_date>2019</end_date>
+    <description>Operate aircraft test and support equipment to troubleshoot and repair avionics 
+    equipment. Perform preventive and corrective maintenance. Certify the quality of work 
+    packages as a Level A qualified technician. Trained and supervised apprentices to perform 
+    servicing and maintenance tasks who then became journeyman qualified technicians. Attained 
+    top mark in QL3 training course. Type certified in CH124 Sea King and CH148 Cyclone helicopters.</description>
+  </work>
+
+  <work>
+    <job_title>AutoCAD Technician</job_title>
+    <company>Genivar</company>
+    <start_date>2008</start_date>
+    <end_date>2010</end_date>
+    <description>Produced electrical engineering drawings using AutoCAD for a team of engineers. 
+    Worked on hospital, and CFB Esquimalt dockyard infrastructure upgrades.</description>
+  </work>
+
+  <work>
+    <job_title>Naval Weapons Technician</job_title>
+    <company>Canadian Forces</company>
+    <start_date>2002</start_date>
+    <end_date>2008</end_date>
+    <description>Performed corrective and preventive maintenance on naval weapons systems. 
+    Troubleshooting systems using technical manuals and drawings to provide operations with a 
+    capable mission platform. Lead teams of technicians in weapons loading and deploying 
+    operations. Trained and supervised apprentice technicians to the journeyman level.
+    </description>
+  </work>
+
+</experience>
+
+</resume>

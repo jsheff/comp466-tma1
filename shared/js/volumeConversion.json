@@ -1,0 +1,41 @@
+[
+  {
+    "unit": "fluid ounce", "abbr": "floz", "conv":  1 
+  },
+  {
+    "unit": "pint", "abbr": "pt", "conv":  20 
+  },
+  {
+    "unit": "quart", "abbr": "qt", "conv":  40 
+  },
+  {
+    "unit": "gallon", "abbr": "gal", "conv":  160 
+  },
+  {
+    "unit": "US fluid ounce", "abbr": "USfl", "conv":  1.0408426 
+  },
+  {
+    "unit": "US pint", "abbr": "USpt", "conv":  16.65362133 
+  },
+  {
+    "unit": "US quart", "abbr": "USqt", "conv":  33.307 
+  },
+  {
+    "unit": "US gallon", "abbr": "USgal", "conv":  133.228 
+  },
+  {
+    "unit": "cubic inch", "abbr": "in3", "conv":  0.5767345291 
+  },
+  {
+    "unit": "cubic foot", "abbr": "ft3", "conv":  996.5972663 
+  },
+  {
+    "unit": "cubic meter", "abbr": "m3", "conv":  35195.07973 
+  },
+  {
+    "unit": "millileter", "abbr": "ml", "conv":  0.0351950797 
+  },
+  {
+    "unit": "litre", "abbr": "l", "conv":  35.19507973 
+  }
+]

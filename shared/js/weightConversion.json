@@ -1,0 +1,29 @@
+[
+  {
+    "unit": "ounce", "abbr": "oz", "conv":  0.0625 
+  },
+  {
+    "unit": "pound", "abbr": "lb", "conv":  1 
+  },
+  {
+    "unit": "stone", "abbr": "st", "conv":  14 
+  },
+  {
+    "unit": "US Ton", "abbr": "usTon", "conv":  2000 
+  },
+  {
+    "unit": "Imperial Ton", "abbr": "impTon", "conv":  2240 
+  },
+  {
+    "unit": "microgram", "abbr": "ug", "conv":  0.0000000022046226 
+  },
+  {
+    "unit": "milligram", "abbr": "mg", "conv":  0.0000022046226 
+  },
+  {
+    "unit": "gram", "abbr": "g", "conv":  0.00220462 
+  },
+  {
+    "unit": "kilogram", "abbr": "kg", "conv":  2.204622622 
+  }
+]

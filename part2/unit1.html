@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 1 Introduction to HTML5</title>
+</head>
+<body>
+  <h1 id="top">HTML 5 Fundamentals</h1>
+  <h2>Introduction</h2>
+  <p>HTML5 is a markup language, it describes the structure of a web page. HTML5 uses tags to label content which the browser renders to a page.</p>
+  <p>Here is a standard HTML5 document.</p>
+  <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+
+      &lt;head&gt;
+        &lt;title&gt;My Web Page&lt;/title&gt;
+      &lt;/head&gt;
+
+      &lt;body&gt;
+      &lt;/body&gt;
+
+    &lt;/html&gt;
+  </pre>
+
+  <pre>&lt;!DOCTYPE html&gt;</pre>
+  <p>This the document type declaration. This tells the browser that this document is an HTML5 webpage that should be rendered in standards mode.</p>
+
+  <pre>&lt;html&gt;</pre>
+  <p>The html element tells the browser that everything that follows is HTML code.</p>
+
+  <pre>&lt;head&gt;</pre>
+  <p>The head element contains data about your web page. The head section can also contain document styling information such ass CSS3 style sheet or script references.</p>
+
+  <pre>&lt;title&gt;</pre>
+  <p>The title element describes the web page and is displayed at the top of the browser window or in the browser tab.</p>
+
+  <pre>&lt;body&gt;</pre>
+  <p>The body tag contains everything that should be displayed inside the main browser window.</p>
+
+  <pre>&lt;p id="my-paragraph"&gt;This is a paragraph&lt;p&gt;</pre>
+  <p>An element consists of an opening tag, which is a left-angle bracket followed by the tag name and a right-angle bracket. The closing tag is a left-angle bracket, a forward slash, the tag name and a right-angle bracket. The opening and closing tag surround the tag's content. A tag may also contain attributes that provide additional information about the tag. An attribute consists of a name and a value separated by an equals sign.</p>
+
+  <h2>Validation</h2>
+  <p>An HTML validation service will ensure that the code you write is valid HTML. The W3C validator can check your document using:
+    <ul>
+      <li>the URL of your web page</li>
+      <li>the html file that you can upload</li>
+      <li>directly pasting in the code to a provided text area</li>
+    </ul>
+  </p>
+
+  <h2>Headings</h2>
+  <p>There are six heading levels in HTML5, h1 through h6. Each successive heading is rendered smaller by the browser.</p>
+  <pre>&lt;h1&gt;Level 1 Heading&lt;/h1&gt;</pre>
+  <pre>&lt;h2&gt;Level 2 Heading&lt;/h3&gt;</pre>
+  <pre>&lt;h3&gt;Level 3 Heading&lt;/h3&gt;</pre>
+  <pre>&lt;h4&gt;Level 4 Heading&lt;/h4&gt;</pre>
+  <pre>&lt;h5&gt;Level 5 Heading&lt;/h5&gt;</pre>
+  <pre>&lt;h6&gt;Level 6 Heading&lt;/h6&gt;</pre>
+  <h1>Level 1 Heading</h1>
+  <h2>Level 2 Heading</h2>
+  <h3>Level 3 Heading</h3>
+  <h4>Level 4 Heading</h4>
+  <h5>Level 5 Heading</h5>
+  <h6>Level 6 Heading</h6>
+
+  <h2>Linking</h2>
+  <pre>&lt;a href="http://google.com"&gt;Google&lt;/a&gt;    <a href="http://google.com">Google</a></pre>
+  <pre>&lt;a href="#top"&gt;Go to the top&lt;/a&gt;>    <a href="#top">Go to the top</a></pre>
+  <pre>&lt;a href="mailto:joyce@email.com"&gt;Email joyce&lt;/a&gt;    <a href="mailto:joyce@email.com">Email joyce</a></pre>
+  <p>Links allow a user to move from one web page to another or from one part of a web page to a different part of the same web page.Any displayed element can act as a link. You can link to another web page or a location within a page, a file, or an email address. A link is created with an anchor element with an href attribute that specifies the location of the resource.</p>
+  
+  <h2>Images</h2>
+  <pre>&lt;img src="image.jpg" alt="image description" width="100" height="100"/&gt;</pre>
+  <img src="../shared/eso1105a.jpg" alt="stary nebula" width="300" height="291">
+  <p>To add an image to the page, you use the img element. The src attribute tells the browser where the image is located. The alt attribute is used to describe the image when it cannot be rendered on the screen. You can specify the dimensions of the image using the attributes width and height. This can be useful so that the browser can render the text on the page while leaving space for the image. The img element is also an example of a void element. This tag does not need a closing tag because the img element does not surround content. Therefore you can close the tag by using a forward slash before the right-angle bracket.</p>
+
+  <h2>Special Characters</h2>
+  <p>There are some characters that can't be rendered directly in a browser. There are symbols that cannot be typed on a keyboard such as the &copy symbol. You can use a character entity reference in the form of <code>&code;</code> to display special characters.</p>
+  <table>
+    <caption>Common character reference entities</caption>
+    <thead>
+      <tr><td>Symbol</td><td>Description</td><td>Character entity reference</td></tr>
+    </thead>
+    <tbody>
+      <tr><td>&amp;</td><td>ampersand</td><td><code>&amp;amp;</code></td></tr>
+      <tr><td>&apos;</td><td>apostrophe</td><td><code>&amp;apos;</code></td></tr>
+      <tr><td>&gt;</td><td>greater-than</td><td><code>&amp;gt;</code></td></tr>
+      <tr><td>&lt;</td><td>less-than</td><td><code>&amp;lt;</code></td></tr>
+      <tr><td>&quot;</td><td>quote</td><td><code>&amp;quot;</code></td></tr>
+      <tr><td>&copy;</td><td>copyright</td><td><code>&amp;copy;</code></td></tr>
+    </tbody>
+  </table>
+
+  <h2>Lists</h2>
+  <p>An unordered list can be used to show items in a simple bullet-style list. Each entry in the list is a list item element &lt;li&gt;. Each item is rendered on a new line. An ordered list is used when you want to show items with each item numbered.</p>
+
+  <h2>Tables</h2>
+
+  <h2>Forms</h2>
+
+  <h2>meta Elements</h2>
+
+</body>
+</html>
