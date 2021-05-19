@@ -4,7 +4,7 @@
 <html>
   <head>
     <title>Part 1 | Resume</title>
-    <link rel="stylesheet" href="../shared/css/style.css"/>
+    <link rel="stylesheet" href="/shared/css/style.css"/>
   </head>
   <body>
     <main>
@@ -18,11 +18,11 @@
           </div>
           <nav>
             <ul>
-              <li><a href="../tma1.html">Home</a></li>
-              <li class="active"><a href="../part1/resume.xml">Part 1</a></li>
-              <li><a href="../part2/part2.html">Part 2</a></li>
-              <li><a href="../part3/part3.html">Part 3</a></li>
-              <li><a href="../part4/part4.html">Part 4</a></li>
+              <li><a href="/">Home</a></li>
+              <li class="active"><a href="/part1/resume.xml">Part 1</a></li>
+              <li><a href="/part2/part2.html">Part 2</a></li>
+              <li><a href="/part3/part3.html">Part 3</a></li>
+              <li><a href="/part4/part4.html">Part 4</a></li>
             </ul>
           </nav>
         </div>
