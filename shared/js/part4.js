@@ -323,8 +323,8 @@ var pv = 0; // present value of savings
 var r = 0.06;  // annual rate of return on investments
 var n = 0;  // number of years money will last
 var spending = 0; // current annual spending
-var currentAge = 0;
-var lifeExpectency = 90;
+var currentAge = 0; // current age of user
+var lifeExpectency = 90;  // average life expectency
 
 // load the retirement div
 function startRetirementApp() 
@@ -345,19 +345,19 @@ function registerRetirementEvents()
   document.getElementById('returnRate').addEventListener('blur', function(){
     validateReturnRate(this.value);
   }, false);
-  document.getElementById('withdrawlRate').addEventListener('blur', function(){
-    validateWithdrawlRate(this.value);
-  }, false);
   document.getElementById('currentAge').addEventListener('blur', function(){
     validateAge(this.value);
   }, false);
   document.getElementById('lifeExpectency').addEventListener('blur', function(){
     validateLifeExpectency(this.value);
   }, false);
+
+  document.getElementById('futureSpending').style.display = "none";
 }
 
 function validateSavings(input) 
 {
+  document.getElementById('futureSpending').style.display = "none";
   var outputMessage = "";
   pv = parseInt(input);
   if (isNaN(pv))
@@ -373,6 +373,7 @@ function validateSavings(input)
 
 function validateSpending(input) 
 {
+  document.getElementById('futureSpending').style.display = "none";
   var outputMessage = "";
   spending = parseInt(input);
   if (isNaN(spending))
@@ -389,6 +390,7 @@ function validateSpending(input)
 
 function validateReturnRate(input) 
 {
+  document.getElementById('futureSpending').style.display = "none";
   var outputMessage = "";
   r = parseFloat(input) / 100;
   if (isNaN(r))
@@ -405,6 +407,7 @@ function validateReturnRate(input)
 
 function validateWithdrawlRate(input) 
 {
+  document.getElementById('futureSpending').style.display = "none";
   var outputMessage = "";
   withdrawl = parseFloat(input) / 100;
   if (isNaN(withdrawl))
@@ -421,6 +424,7 @@ function validateWithdrawlRate(input)
 
 function validateAge(input) 
 {
+  document.getElementById('futureSpending').style.display = "none";
   var outputMessage = "";
   currentAge = parseInt(input);
   if (isNaN(currentAge))
@@ -441,6 +445,7 @@ function validateAge(input)
 
 function validateLifeExpectency(input) 
 {
+  document.getElementById('futureSpending').style.display = "none";
   var outputMessage = "";
   lifeExpectency = parseInt(input);
   if (lifeExpectency <= currentAge || isNaN(lifeExpectency))
@@ -454,6 +459,7 @@ function validateLifeExpectency(input)
 // compute the amount of money you can withdraw each year to have money last through retirement
 function computePayment()
 {
+  var retirementResult = "";
   var outputMessage = "";
   // calculate yearly withdrawls using annuity due formula
   n = lifeExpectency - currentAge;
@@ -465,18 +471,19 @@ function computePayment()
   });
   outputMessage += "<p>You will have " + formatter.format(p) + " to spend each year in retirement.</p>"
   if (p > spending) {
-    outputMessage += "<p>You can retire right now!</p>";   
+    retirementResult += "<p>You can retire right now!</p>";   
   } else {
     var reduceExpenses = spending - p;
     var futureNetWorth = spending * ((1 - (1+r)**(-n)) / r);
     console.log(futureNetWorth);
     var shortfall = futureNetWorth - pv;
-    outputMessage += "<p>You can't retire just yet.</p>";
+    retirementResult += "<p>You can't retire just yet.</p>";
     outputMessage += "<p>You can reduce yearly spending by " + formatter.format(reduceExpenses) + " </p>";
     outputMessage += "<p>Or increase savings by " + formatter.format(shortfall) + "</p>";
   }
-
+  document.getElementById('retirementResult').innerHTML = retirementResult;
   document.getElementById('futureSpending').innerHTML = outputMessage;
+  document.getElementById('futureSpending').style.display = "block";
 }
 
 window.addEventListener("load", start, false);
