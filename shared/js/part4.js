@@ -323,7 +323,6 @@ var pv = 0; // present value of savings
 var r = 0.06;  // annual rate of return on investments
 var n = 0;  // number of years money will last
 var spending = 0; // current annual spending
-var withrawl = 0.04;  // safe withdrawl rate, default is 4% of savings
 var currentAge = 0;
 var lifeExpectency = 90;
 
