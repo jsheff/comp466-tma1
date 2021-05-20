@@ -1,23 +1,35 @@
 /* Color Theme Swatches in Hex */
-.Neutral-Blue-1-hex { color: #FCFFF5; }
-.Neutral-Blue-2-hex { color: #D1DBBD; }
-.Neutral-Blue-3-hex { color: #91AA9D; }
-.Neutral-Blue-4-hex { color: #3E606F; }
-.Neutral-Blue-5-hex { color: #193441; }
+.Neutral-Blue-1-hex {
+  color: #fcfff5;
+}
+.Neutral-Blue-2-hex {
+  color: #d1dbbd;
+}
+.Neutral-Blue-3-hex {
+  color: #91aa9d;
+}
+.Neutral-Blue-4-hex {
+  color: #3e606f;
+}
+.Neutral-Blue-5-hex {
+  color: #193441;
+}
 
 /* Global Styles */
 
 html {
-  box-sizing: border-box;   /* include padding and border in elements total width */
+  box-sizing: border-box; /* include padding and border in elements total width */
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   line-height: 1.2em;
   background-color: #193441;
 }
@@ -37,20 +49,20 @@ a {
 header {
   padding-top: 20px;
   min-height: 200px;
-  border-bottom: 4px solid #91AA9D;
+  border-bottom: 4px solid #91aa9d;
 }
 
 .logo {
   float: left;
 }
 .logo img {
-  width: 100px
+  width: 100px;
 }
 .heading {
   float: left;
   font-size: 1.6em;
-  color: #FCFFF5;
-  padding-left: 20px
+  color: #fcfff5;
+  padding-left: 20px;
 }
 
 /* Navigation */
@@ -66,14 +78,14 @@ nav li {
   margin-right: 10px;
 }
 nav a {
-  color: #FCFFF5;
+  color: #fcfff5;
   font-weight: bold;
 }
 .active a {
-  color: #B0B3A9;
+  color: #b0b3a9;
 }
 nav a:hover {
-  color: #91AA9D;
+  color: #91aa9d;
 }
 
 /* Main */
@@ -85,20 +97,22 @@ nav a:hover {
 }
 
 .title {
-  padding-bottom: 40px
+  padding-bottom: 40px;
 }
-.title h1, .title h2 {
+.title h1,
+.title h2 {
   text-align: center;
   font-size: 2em;
   font-weight: 700;
-  color: #3E606F;
+  color: #3e606f;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "box1 box2 box3"
-  "box4 . box5";
+  grid-template-areas:
+    "box1 box2 box3"
+    "box4 . box5";
   gap: 20px;
 }
 .box1 {
@@ -119,7 +133,7 @@ nav a:hover {
 /* Boxes */
 
 .box {
-  background-color: #FCFFF5;
+  background-color: #fcfff5;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -135,7 +149,7 @@ nav a:hover {
   padding: 0 30px;
 }
 .box a {
-  color: #3E606F;
+  color: #3e606f;
 }
 .box a:hover {
   color: #193441;
@@ -146,22 +160,22 @@ nav a:hover {
 footer {
   font-size: 1.2em;
   text-align: center;
-  color:#B0B3A9;
+  color: #b0b3a9;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-top: 4px solid #91AA9D;
+  border-top: 4px solid #91aa9d;
 }
 
 /* Part 1 Styles */
 
 section {
-  background-color: #D1DBBD;
+  background-color: #d1dbbd;
   padding-bottom: 80px;
 }
 
 .personal h1 {
   font-size: 2em;
-  color: #3E606F;
+  color: #3e606f;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -170,7 +184,7 @@ section {
   text-transform: uppercase;
   font-size: 1.2em;
   font-weight: bold;
-  color: #3E606F;
+  color: #3e606f;
 }
 
 .grid2 {
@@ -203,8 +217,8 @@ section {
 /* Personal Info */
 
 button {
-  background-color: #3E606F;
-  color: #FCFFF5;
+  background-color: #3e606f;
+  color: #fcfff5;
   border: none;
   outline: none;
   padding: 10px 20px;
@@ -212,12 +226,13 @@ button {
 }
 
 button a {
-  color: #FCFFF5;
+  color: #fcfff5;
   font-size: 1.2em;
 }
 
-button:hover, button a:hover{
-  color: #91AA9D;
+button:hover,
+button a:hover {
+  color: #91aa9d;
   cursor: pointer;
   background-color: #254756;
 }
@@ -228,10 +243,10 @@ button:disabled {
 }
 
 select {
-  background-color: #3E606F;
+  background-color: #3e606f;
   border: none;
   outline: none;
-  color: #FCFFF5;
+  color: #fcfff5;
   text-decoration: none;
   padding: 10px 10px;
   font-size: 1.2em;
@@ -252,7 +267,7 @@ select:hover {
 label {
   font-size: 1.2em;
   font-weight: bolder;
-  color: #3E606F;
+  color: #3e606f;
 }
 
 canvas {
@@ -282,14 +297,13 @@ canvas {
 #slideshow.shrink {
   transform: scaleY(0);
 }
-/*
-#slideshow.wipe-display{
-  
+
+#slideshow.wipe-display {
+  transition: transform 1s;
 }
 #slideshow.wipe {
-
+  transform: translate(200%);
 }
-*/
 
 /* Part 4 */
 
@@ -302,7 +316,7 @@ canvas {
 #appContainer h1 {
   text-align: center;
   font-size: 2em;
-  color: #3E606F;
+  color: #3e606f;
   margin-bottom: 50px;
 }
 
@@ -314,7 +328,9 @@ canvas {
   gap: 20px;
 }
 
-#controls button, #mortgageApp button, #retirementApp button {
+#controls button,
+#mortgageApp button,
+#retirementApp button {
   font-size: 1.4em;
 }
 
@@ -324,7 +340,7 @@ canvas {
   margin-bottom: 40px;
 }
 
-.tabs button  {
+.tabs button {
   background-color: #c0c0c0;
   border: none;
   outline: none;
@@ -345,7 +361,7 @@ canvas {
   background-color: #5268ac;
 }
 
-input[type=number] {
+input[type="number"] {
   box-sizing: border-box;
   padding: 10px;
   border: 0;
@@ -357,7 +373,8 @@ input[type=number] {
 
 /* Mortgage Calculator */
 
-#mortgageApp, #retirementApp {
+#mortgageApp,
+#retirementApp {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
@@ -379,5 +396,5 @@ input[type=number] {
   font-size: 1.2em;
   line-height: 1.4em;
   font-weight: bold;
-  color: #3E606F;
+  color: #3e606f;
 }
